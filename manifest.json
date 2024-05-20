@@ -1,11 +1,9 @@
 {
-	"id": "sample-plugin",
-	"name": "Sample Plugin",
+	"id": "replace-mathjax-notation",
+	"name": "Replace MathJax Notation",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "Demonstrates some of the capabilities of the Obsidian API.",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md",
-	"fundingUrl": "https://obsidian.md/pricing",
+	"description": "Replaces MathJax notations with Obsidian friendly math environments making it easier to copy markdown from other sources that do not use `$` by default for their math environments.",
+	"author": "Gabriele Lazzarelli",
 	"isDesktopOnly": false
 }
