@@ -9,8 +9,8 @@ export default class ReplaceMathJax extends Plugin {
 			name: 'Replace MathJax Notation',
 			editorCallback: (editor: Editor, view: MarkdownView) => {
 				let text = editor.getValue();
-				text = text.replace(/\\\((.*?)\\\)/g, '$$$1$');
-				text = text.replace(/\\\[([\s\S]*?)\\\]/g, '$$$$$1$$$$');
+				text = text.replace(/\\\(\s*(.*?)\s*\\\)/g, (match, p1) => `\$${p1.trim()}\$`);
+				text = text.replace(/\\\[\s*([\s\S]*?)\s*\\\]/g, (match, p1) => `\$\$${p1.trim()}\$\$`);
 				editor.setValue(text);
 			}
 		});
