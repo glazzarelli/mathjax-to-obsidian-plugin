@@ -1,7 +1,7 @@
 {
 	"id": "replace-mathjax-notation",
 	"name": "Replace MathJax Notation",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"minAppVersion": "0.15.0",
 	"description": "Replaces MathJax notations with Obsidian friendly math environments making it easier to copy markdown from other sources that do not use `$` by default for their math environments.",
 	"author": "Gabriele Lazzarelli",
